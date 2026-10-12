@@ -1,6 +1,6 @@
 import hashlib
 import requests
-pw = input("Пароль: ")
+pw = input("Password: ")
 full = hashlib.sha1(pw.encode()).hexdigest().upper()
 prefix = full[:5]
 suffix = full[5:]
